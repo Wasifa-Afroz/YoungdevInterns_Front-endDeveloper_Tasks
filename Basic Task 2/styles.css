@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  font-family: 'Garamond', serif; /* Garamond font */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color:  #daa170; /* Beige background */
+  color: #4b2e2e; /* Coffee brown text */
+}
+
+header {
+  background-color: #c7884ede; /* Coffee brown */
+  color: #fdf5e6; /* Light beige text */
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 1.2 rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center; /* Centers items vertically */
+  background-color: #a1633e; /* Dark brown background */
+  top: 0;
+  z-index: 1000; /* Keeps navbar above other elements */
+}
+
+/* Logo Styling */
+.navbar .logo img {
+  width: 90px; /* Adjust the logo size */
+  height: auto;
+}
+
+/* Nav Links Styling */
+.navbar .nav-links { /* Aligns links horizontally */
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes links appear in a row */
+}
+
+.navbar .nav-links li {
+  margin: 0 18px; /* Adds spacing between links */
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Removes underline */
+  color: #f4f1ea; /* Light beige text color */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease; /* Adds smooth hover effect */
+}
+
+.navbar .nav-links a:hover {
+  color: #d1a767; /* Golden brown hover color */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stacks navbar items vertically */
+  }
+
+  .navbar .nav-links {
+      flex-direction: column; /* Stacks links vertically */
+  }
+
+  .navbar .nav-links li {
+      margin: 10px 0; /* Adds spacing between links in mobile view */
+  }
+}
+
+/* Section Styles */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff8dc; /* Light cream */
+  border: 1px solid #d2b48c; /* Tan border */
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+/* Text Container Styling */
+section .text-container {
+  max-width: 60%; /* Adjust width as needed */
+}
+
+/* Image Styling */
+section img {
+  max-width: 35%; /* Adjust width as needed */
+  height: auto;
+  margin-left: 20px; /* Adds space between text and image */
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #a1633e;; /* Darker coffee brown */
+  color: #fdf5e6; /* Light beige */
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer nav ul {
+  display: inline-flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+footer div a {
+  color: #fdf5e6;
+  margin: 0 5px;
+  text-decoration: none;
+}

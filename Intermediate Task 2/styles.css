@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: 'Garamond', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #daa170; /* Beige background */
+  color: #4b2e2e; /* Coffee brown text */
+}
+
+header {
+  background-color: #c7884ede; /* Coffee brown */
+  color: #fdf5e6; /* Light beige text */
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: center;
+  background-color: #a1633e; /* Dark brown background */
+  padding: 10px 20px;
+}
+
+.navbar .logo img {
+  width: 80px; /* Adjust the logo size */
+  height: auto;
+}
+
+.navbar .nav-links {
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes links appear in a row */
+}
+
+.navbar .nav-links li {
+  margin: 0 10px; /* Adds spacing between links */
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Removes underline */
+  color: #f4f1ea; /* Light beige text color */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease; /* Adds smooth hover effect */
+}
+
+.navbar .nav-links a:hover {
+  color: #d1a767; /* Golden brown hover color */
+}
+
+/* Section Styles */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff8dc; /* Light cream */
+  border: 1px solid #d2b48c; /* Tan border */
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+section .text-container {
+  max-width: 60%; /* Adjust width as needed */
+}
+
+section img {
+  max-width: 35%; /* Adjust width as needed */
+  height: auto;
+  margin-left: 20px; /* Adds space between text and image */
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #a1633e; /* Darker coffee brown */
+  color: #fdf5e6; /* Light beige */
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer div a {
+  color: #fdf5e6;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar .logo img {
+    width: 60px;
+  }
+
+  section {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  section .text-container,
+  section img {
+    max-width: 100%; /* Full width */
+  }
+
+  section img {
+    margin: 10px 0; /* Add spacing */
+  }
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    margin-top: 10px;
+    justify-content: flex-start; /* Aligns items to the left */
+  }
+
+  .navbar .nav-links li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  section .text-container {
+    text-align: center;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* For extra small devices */
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    width: 50px;
+  }
+
+  section {
+    margin: 10px;
+  }
+
+  section .text-container {
+    font-size: 16px;
+  }
+}
